@@ -1,0 +1,47 @@
+{
+    "cmake.buildDirectory": "${workspaceRoot}/build/cmake",
+    "cmake.installPrefix": "${workspaceRoot}/build/cmake/install",
+    "cmake.sourceDirectory": "${workspaceRoot}/llvm",
+    "cmake.generator": "Ninja",
+    "cmake.configureSettings": {
+        "LLVM_TARGETS_TO_BUILD": "X86",
+        "LLVM_OPTIMIZED_TABLEGEN": "1",
+        "CMAKE_LINKER" : "c:/Program Files/LLVM/bin/lld-link.exe"
+    },
+    "cmake.cacheInit": "../llvm-cache.cmake",
+    "cmake.autoRestartBuild": true,
+    "cmake.buildBeforeRun": false,
+    "files.associations": {
+        "*.inc": "cpp",
+        "memory": "cpp",
+        "*.def": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp",
+        "algorithm": "cpp"
+    },
+    "cmake.clearOutputBeforeBuild": false,
+    "restructuredtext.sphinxBuildPath": "c:/Anaconda3/Scripts/sphinx-build.exe",
+    "python.condaPath": "c:/Anaconda3/Scripts/conda.exe",
+    "python.pythonPath": "c:/anaconda3/envs/varantic/python.exe",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "restructuredtext.confPath": "${workspaceFolder}\\llvm\\docs",
+    "clangd.path": "C:/Program Files/LLVM/bin/clangd.exe",
+    "clangd.arguments": [
+        "--compile-commands-dir=c:/git/llvm-project/build/cmake",
+        "--clang-tidy",
+        "--clang-tidy-checks=*,-modernize-use-trailing-return-type,-google-runtime-references,-fuchsia-default-arguments-calls"
+    ],
+    "lldb.executable": "c:/program files/llvm/bin/lldb.exe",
+    "C_Cpp.autocomplete": "Disabled",
+    "C_Cpp.default.intelliSenseMode": "clang-x64",
+    "C_Cpp.enhancedColorization": "Enabled",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "C_Cpp.clang_format_style": "LLVM",
+    "C_Cpp.workspaceParsingPriority": "low"
+} 
